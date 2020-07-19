@@ -1,0 +1,11 @@
+input {
+  margin-bottom: 3px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: aqua;
+}

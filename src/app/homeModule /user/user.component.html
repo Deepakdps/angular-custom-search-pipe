@@ -1,0 +1,45 @@
+<div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label>
+      Title:
+      <input type="text" formControlName="title" />
+    </label>
+    <label>
+      FirstName:
+      <input type="text" formControlName="first" />
+    </label>
+    <label>
+      LastName:
+      <input type="text" formControlName="last" />
+    </label>
+    <label>
+      Email:
+      <input type="text" formControlName="email" />
+    </label>
+    <label>
+      UserName:
+      <input type="text" formControlName="username" />
+    </label>
+    <label>
+      Password:
+      <input type="text" formControlName="password" />
+    </label>
+    <label>
+      Phone:
+      <input type="tel" formControlName="phone" />
+    </label>
+    <label>
+      DOB:
+      <input type="date" formControlName="dob" />
+    </label>
+
+    <div *ngFor="let gender of genders">
+      <label>
+        <input type="radio" [value]="gender" formControlName="gender" />{{
+          gender
+        }}
+      </label>
+    </div>
+    <input type="submit" />
+  </form>
+</div>
